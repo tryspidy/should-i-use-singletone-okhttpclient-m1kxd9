@@ -1,0 +1,3 @@
+OkHttp performs best when you create a single OkHttpClient instance and reuse it for all of your HTTP calls. 
+This is because each client holds its own connection pool and thread pools. Reusing connections and threads reduces latency and saves memory. 
+Conversely, creating a client for each request wastes resources on idle pools.
